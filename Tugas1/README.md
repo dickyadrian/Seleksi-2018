@@ -1,19 +1,10 @@
-<h1 align="center">
-  <br>
-  Tugas 1 Seleksi Warga Basdat 2018
-  <br>
-  <br>
-</h1>
+# Scraping Data Lowongan Pekerjaan di Bandung
 
-<h2 align="center">
-  <br>
-  Data Scraping
-  <br>
-  <br>
-</h2>
+## Description
 
+Program akan melakukan scraping dari website https://jobindo.com/index.php?lang=in&mod=search&location=9-328&num=2 dan menyimpannya dalam sebuah file .json
 
-### Specifications
+## Specifications
 
 1. Lakukan data scraping dari sebuah laman web untuk memeroleh data atau informasi tertentu __TANPA MENGGUNAKAN API__
 
@@ -81,3 +72,37 @@ Preprocessing contohnya :
   <br>
   <br>
 </p>
+
+## How To Use
+
+1. Jalankan Makefile 
+2. Tunggu sampai proses scraping selesai
+3. Hasil scraping akan disimpan di file dengan nama "result.json"
+
+## JSON Structure
+
+JSON berupa list dari dictionary. Dictionary berisi:
+```
+{
+  'judul': <Judul dari Pekerjaan>
+  'perusahaan': <Perusahaan yang menyediakan lowongan>
+  'persyaratan': <List dari persyaratan detail yang dibutuhkan>
+  'deskripsi': <List dari deskripsi pekerjaan yang dilakukan (bisa kosong)>
+  'pendidikan': <Pendidikan minimal untuk mendapatkan pekerjaan>
+  'pengalaman_min': <Pengalaman minimal yang dimiliki pelamar berapa lama>
+  'tipe': <Tipe dari sebuah pekerjaan(full-time, kontrak, dll)>
+  'jumlah_pelamar': <Berapa banyak yang sudah melamar melalui website ini>
+}
+```
+
+## Screenshots
+
+## Reference
+Library yang digunakan:
+1. bs4 (BeautifulSoup)
+2. requests
+3. time
+4. json
+
+## Author
+Dicky Adrian - 13516050
