@@ -96,6 +96,8 @@ JSON berupa list dari dictionary. Dictionary berisi:
 ```
 
 ## Screenshots
+![alt text](screenshots/program1.jpg)
+![alt text](screenshots/program2.jpg)
 
 ## Reference
 Library yang digunakan:
