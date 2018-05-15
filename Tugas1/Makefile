@@ -1,7 +1,9 @@
 all: clean build run
 
-clean: # remove data and binary folder
+clean:
+rm -rf data/result.json
 
-build: # compile to binary (if you use interpreter, then do not implement it)
+build:
 
-run: # run your binary
+run: 
+python src/Scrape.py
